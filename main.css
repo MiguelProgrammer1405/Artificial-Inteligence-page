@@ -20,6 +20,7 @@ variables
   --grey: #64748b;
   --black: #222;
   --white: #fff;
+  --grey-light: #f1f5f8;
   --ff-primary: "Montserrat", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --letter-spacing: 0.15rem;
@@ -197,3 +198,77 @@ p {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
 }
+
+/* 
+=============
+services
+=============
+*/
+
+.services {
+  background: var(--grey-light);
+  text-align: center;
+}
+
+.service {
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--clr-primary);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.service p {
+  color: var(--clr-primary);
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  line-height: 2;
+}
+
+.service:hover {
+  background: var(--white);
+}
+
+.service:hover .service-icon {
+  transform: translatey(-5px);
+  transform: scale(1.2);
+}
+
+.service h4 {
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .service {
+    float: left;
+    width: 50%;
+    padding: 3rem 2rem;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    float: left;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .service {
+    float: left;
+    width: 25%;
+  }
+}
+
+/* 
+=============
+end of services
+=============
+*/
